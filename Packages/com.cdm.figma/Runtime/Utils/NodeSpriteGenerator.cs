@@ -333,7 +333,7 @@ namespace Cdm.Figma.Utils
 
             var imageTexture = new Texture2D(1, 1);
             imageTexture.LoadImage(imageData, true);
-            imageTexture.name = node.id;
+            imageTexture.name = node.name;
             imageTexture.hideFlags = HideFlags.NotEditable;
 
             return CreateTexturedSprite(node, options, imageTexture);
@@ -710,7 +710,7 @@ namespace Cdm.Figma.Utils
 
             if (texture != null)
             {
-                texture.name = node.id;
+                texture.name = node.name;
                 texture.hideFlags = HideFlags.NotEditable;
                 texture.filterMode = options.filterMode;
                 texture.wrapMode = options.wrapMode;
@@ -753,7 +753,7 @@ namespace Cdm.Figma.Utils
                 spriteWithTexture = Sprite.Create(texture, spriteRect, spritePivot, pixelsPerUnit, 0);
             }
 
-            spriteWithTexture.name = node.id;
+            spriteWithTexture.name = node.name;
             spriteWithTexture.hideFlags = HideFlags.NotEditable;
 
             return spriteWithTexture;

@@ -114,7 +114,7 @@ namespace Cdm.Figma.UI
                         {
                             if (generatedSprite.isNew)
                             {
-                                generatedSprite.sprite.name = nodeId;
+                                generatedSprite.sprite.name = node.name;
                                 args.importer.generatedAssets.Add(nodeId, generatedSprite.sprite);
                                 args.importer.generatedAssets.Add(nodeId, generatedSprite.sprite.texture);    
                             }
